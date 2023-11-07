@@ -1,0 +1,98 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../asset/image/pic\ 1.jpg);
+    background-size: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main{
+    width: 60%;
+    height: 80%;
+    background-image: linear-gradient(75deg,blue,rgb(214, 115, 115),white,brown,white,rgb(194, 86, 86),blue);
+    background-position: 1800px;
+    background-size: 1800px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black, -2px 2px 3px black,2px -2px 3px black,-2px -2px 3px black ;
+    animation: main 5s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+@keyframes main {
+    from{
+        background-position: 1800px;
+        background-size: 18000px;
+    }
+    to{
+        background-position: 0px;
+        background-size: 18000px;
+    }
+}
+#sub{
+    width: 80%;
+    height: 80%;
+    background-color: rgba(255, 0, 0, 0.397);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+
+h1{
+    font-size: 70px;
+    letter-spacing:10px;
+    font-weight: bold;
+    color: white;
+}
+.login{
+    width: 60%;
+    height: 40px;
+    border: none;
+    padding-left: 30px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 2px 2px 2px black;
+}
+#button{
+    width: 40%;
+    height: 40px;
+    position: relative;
+    top: 25px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 5px;
+    outline: none;
+    background-image: linear-gradient(75deg,limegreen,lightpink,brown,limegreen);
+    background-position: 100px;
+}
+a{
+    width: 100%;
+    height: 40px;
+    /* background-color: red; */
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    transform:scale(1.4);
+    color: violet;
+}

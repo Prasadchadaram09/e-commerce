@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipzon</title>
+    <script src="../javascript/homepage.js" defer></script>
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- <div id="container">
+        <div id="LoadingText">
+            <span class="loading F">F</span>
+            <span class="loading L">L</span>
+            <span class="loading I">I</span>
+            <span class="loading P">P</span>
+            <span class="loading Z">Z</span>
+            <span class="loading O">O</span>
+            <span class="loading N">N</span>
+        </div>
+        <div id="loadingBar"></div>
+        </div> -->
+        <div id="webpagebody">
+            <nav>
+                <img id="logo" src="../asset/logo/logo1.png" alt="">
+                <div id="dropandSearch">
+                    <div id="dropdown">
+                        <ul id="mainlist">
+                            <li id="liofMain">All
+                                <i class="fa-solid fa-caret-down fa-bounce"></i>
+                                <ul id="sublist">
+                                    <li class="sli">Clothing</li>
+                                    <li class="sli">Electronics</li>
+                                    <li class="sli">Home product</li>
+                                    <li class="sli">Grocery</li>
+                                    <li class="sli">Toys</li>
+                                </ul> 
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="search">
+                        <div id="input">
+                            <input type="search" id="searchinput">
+                            <i id="searchicon" class="fa-sharp fa-solid fa-magnifying-glass fa-beat"></i>
+                        </div>
+                    </div>
+                    <div id="Login">
+                        <a href="../index.html" id="a">Login</a>
+                    </div>
+                    <div id="cart">
+                        <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                        <div><input type="button"value="0" id="carts"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="header">
+            <header>
+                <input type="button" value="<" id="left" onclick="dec()">
+                <input type="button" value=">" id="right" onclick="inc()">
+            </header>
+        </div>
+        <div id="containerProd">
+            <div class="products">
+                <img class="cloths" id="dress" src="../asset/image/dress.png" >
+                <img class="cloths" id="pant" src="../asset/image/pant.png" >
+                <h2 id="textcloths">cloths</h2>
+                <img class="cloths" id="jacket" src="../asset/image/jacket.png" >
+                <img class="cloths" id="shirt" src="../asset/image/shirt.png" >
+            </div>
+            <div class="products">
+                <img src="../asset/image/toy1`.png" id="toy1" class="toys">
+                <img src="../asset/image/toy2.png" id="toy2" class="toys">
+                <h2 id="texttoy">toy</h2>
+                <img src="../asset/image/toy3.png" id="toy3" class="toys">
+                <img src="../asset/image/toy4.png" id="toy4" class="toys">
+            </div>
+            <div class="products">
+                <img id="laptop" src="../asset/image/laptop.png" class="Electronics">
+                <img id="tab" src="../asset/image/tab.png" class="Electronics">
+                <h2 id="textElectronics">Electronics</h2>
+                <img id="phone" src="../asset/image/phone.png" class="Electronics">
+                <img id="tv" src="../asset/image/tv.png" class="Electronics">
+            </div>
+            <div class="products">
+                <img id="eggs" src="../asset/image/eggs.png" class="Grocerys">
+                <img id="rice" src="../asset/image/rice.png" class="Grocerys">
+                <h2 id="textGrocerys">Grocery</h2>
+                <img id="salt" src="../asset/image/salt.png" class="Grocerys">
+                <img id="lays" src="../asset/image/lays.png" class="Grocerys">
+            </div>
+            <div class="products">
+                <img id="home1" src="../asset/image/home1.png" class="homeprods">
+                <img id="home2" src="../asset/image/home2.png" class="homeprods">
+                <h2 id="texthomeprods">homeproducts</h2>
+                <img id="home3" src="../asset/image/home3.png" class="homeprods">
+                <img id="home4" src="../asset/image/home4.png" class="homeprods">
+            </div>
+        </div>
+        <div id="productDetails">
+            <div class="prodDetails">
+                <img src="../asset/image/dress.png" class="details">  
+                <h1>dress</h1>        
+                <h1>RS 2000/-</h1>      
+            </div>
+            <div class="prodDetails">
+                <img src="../asset/image/shirt.png" class="details">
+                <h1>shirt</h1>        
+                <h1>RS 200/-</h1>      
+            </div>
+            <div class="prodDetails">
+                <img src="../asset/image/jacket.png" class="details">
+                <h1>jacket</h1>        
+                <h1>RS 2300/-</h1>      
+            </div>
+            <div class="prodDetails">
+                <img src="../asset/image/pant.png" class="details">
+                <h1>Pant</h1>        
+                <h1>RS 400/-</h1>  
+            </div>
+            <div class="prodDetails">
+                <img src="../asset/image/phone.png" class="details">
+                <h1>phone</h1>        
+                <h1>RS 12000/-</h1>  
+            </div>
+            <div class="prodDetails">
+                <img src="../asset/image/laptop.png" class="details">
+                <h1>laptop</h1>        
+                <h1>RS 45000/-</h1>  
+            </div>
+            <div class="prodDetails">
+                <img src="../asset/image/tab.png" class="details">
+                <h1>tab</h1>        
+                <h1>RS 10000/-</h1>  
+            </div>
+            <div class="prodDetails">
+                <img src="../asset/image/toy1`.png" class="details">
+                <h1>toys</h1>        
+                <h1>RS 230/-</h1>  
+            </div>
+            <div class="prodDetails">
+                <img src="../asset/image/home2.png" class="details">
+                <h1>home</h1>        
+                <h1>RS 3000/-</h1>  
+            </div>
+            <div class="prodDetails">
+                <img src="../asset/image/home3.png" class="details">
+                <h1>home</h1>        
+                <h1>RS 1200/-</h1>  
+            </div> 
+            <div class="prodDetails">
+                <img src="../asset/image/home4.png" class="details">
+                <h1>home</h1>        
+                <h1>RS 12000/-</h1>  
+            </div> 
+            <div class="prodDetails">
+                <img src="../asset/image/toy2.png" class="details">
+                <h1>toys</h1>        
+                <h1>RS 500/-</h1>  
+            </div> 
+        </div>
+</body>
+</html>
